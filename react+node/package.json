@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "concurrently": "^9.0.1",
+    "prettier": "3.3.3"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd my-app/frontend/my-application && npm run dev",
+    "server": "cd my-app/back && node index.js"
+  }
+}
